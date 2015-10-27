@@ -16,9 +16,10 @@ class HangmanViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var guessesLabel: UILabel!
     @IBOutlet weak var nextGuessLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var startOverButton: UIButton!
     
     var numGuesses: Int = 0
-    let hangman = Hangman()
+    var hangman = Hangman()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,23 @@ class HangmanViewController: UIViewController, UITextFieldDelegate {
         hangman.start()
         lettersGuessedLabel.text = ""
         numGuesses = 0
+        for view in self.view.subviews as [UIView] {
+            if let btn = view as? UIButton {
+                btn.hidden = false
+            }
+        }
+        answerLabel.text = hangman.knownString
+    }
+    
+    @IBAction func startOverPressed() {
+        let answer = hangman.answer
+        hangman.start()
+        while hangman.answer != answer {
+            hangman.start()
+        }
+        lettersGuessedLabel.text = ""
+        numGuesses = 0
+        hangmanStateIV.image = UIImage(named: "hangman\(numGuesses+1).gif")
         for view in self.view.subviews as [UIView] {
             if let btn = view as? UIButton {
                 btn.hidden = false
