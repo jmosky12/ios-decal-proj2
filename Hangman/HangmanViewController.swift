@@ -15,6 +15,7 @@ class HangmanViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lettersGuessedLabel: UILabel!
     @IBOutlet weak var guessesLabel: UILabel!
     @IBOutlet weak var nextGuessLabel: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
     
     var numGuesses: Int = 0
     let hangman = Hangman()
@@ -24,20 +25,26 @@ class HangmanViewController: UIViewController, UITextFieldDelegate {
         let beach: UIImage = UIImage(named: "sky")!
         view.backgroundColor = UIColor(patternImage: beach)
         lettersGuessedLabel.text = ""
-        hangmanStateIV.image = UIImage(named: "hangman1")
+        hangmanStateIV.image = UIImage(named: "hangman\(numGuesses+1).gif")
         hangman.start()
+        answerLabel.text = hangman.knownString
     }
     
     @IBAction func letterPressed(sender: UIButton) {
         let letter: String = (sender.titleLabel?.text)!
         let result = hangman.guessLetter(letter)
+        let letters = lettersGuessedLabel!
         if result == false {
-            let guesses: String = hangman.guesses()
-            lettersGuessedLabel.text = guesses
+            if letters.text! == "" {
+                letters.text! = "\(letter)"
+            } else {
+                letters.text! = "\(lettersGuessedLabel.text!), \(letter)"
+            }
             numGuesses++
         }
         
-        
+        hangmanStateIV.image = UIImage(named: "hangman\(numGuesses+1).gif")
+        answerLabel.text = hangman.knownString
         sender.hidden = true
         
         if hangman.answer == hangman.knownString {
@@ -45,9 +52,9 @@ class HangmanViewController: UIViewController, UITextFieldDelegate {
             alert.addAction(UIAlertAction(title: "Play Again", style: .Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
             newGamePressed()
-        } else if numGuesses == 7 {
-            let alert = UIAlertController(title: "You Lose!", message: "Better luck next time.", preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "Try Again", style: .Default, handler: nil))
+        } else if numGuesses == 6 {
+            let alert = UIAlertController(title: "You Lose!", message: "The phrase was: \(hangman.answer!)", preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Play Again", style: .Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
             newGamePressed()
         }
@@ -62,12 +69,11 @@ class HangmanViewController: UIViewController, UITextFieldDelegate {
                 btn.hidden = false
             }
         }
+        answerLabel.text = hangman.knownString
     }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
-

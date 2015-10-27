@@ -61,8 +61,9 @@ class Hangman {
             return ""
         }
         var result: String!
-        for (var i = 0; i < guessedLetters!.count; i += 1) {
-            result = result + ", \(guessedLetters?.objectAtIndex(i))"
+        result = "\((guessedLetters?.objectAtIndex(0))!)"
+        for (var i = 1; i < guessedLetters!.count; i += 1) {
+            result = result + ", \((guessedLetters?.objectAtIndex(i))!)"
         }
         return result
     }

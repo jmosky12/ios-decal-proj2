@@ -12,9 +12,15 @@
 		3A2BBF5F1BCDDAC200B23285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF5D1BCDDAC200B23285 /* Main.storyboard */; };
 		3A2BBF611BCDDAC200B23285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF601BCDDAC200B23285 /* Assets.xcassets */; };
 		3A2BBF641BCDDAC200B23285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF621BCDDAC200B23285 /* LaunchScreen.storyboard */; };
-		3A2BBF6D1BCDDDA900B23285 /* HangmanWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF6C1BCDDDA900B23285 /* HangmanWords.swift */; settings = {ASSET_TAGS = (); }; };
 		3A2BBF6F1BCDDEBB00B23285 /* phrases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF6E1BCDDEBB00B23285 /* phrases.plist */; settings = {ASSET_TAGS = (); }; };
 		3A2BBF731BCDE37800B23285 /* Hangman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF721BCDE37800B23285 /* Hangman.swift */; settings = {ASSET_TAGS = (); }; };
+		DF02A1C41BDF2D5000E485B3 /* hangman1.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1C31BDF2D5000E485B3 /* hangman1.gif */; settings = {ASSET_TAGS = (); }; };
+		DF02A1C71BDF2D7D00E485B3 /* hangman2.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1C61BDF2D7D00E485B3 /* hangman2.gif */; settings = {ASSET_TAGS = (); }; };
+		DF02A1C91BDF2D9700E485B3 /* hangman3.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1C81BDF2D9700E485B3 /* hangman3.gif */; settings = {ASSET_TAGS = (); }; };
+		DF02A1CB1BDF2DA000E485B3 /* hangman4.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1CA1BDF2DA000E485B3 /* hangman4.gif */; settings = {ASSET_TAGS = (); }; };
+		DF02A1CD1BDF2DA600E485B3 /* hangman5.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1CC1BDF2DA600E485B3 /* hangman5.gif */; settings = {ASSET_TAGS = (); }; };
+		DF02A1CF1BDF2DAE00E485B3 /* hangman6.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1CE1BDF2DAE00E485B3 /* hangman6.gif */; settings = {ASSET_TAGS = (); }; };
+		DF02A1D11BDF2DB500E485B3 /* hangman7.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF02A1D01BDF2DB500E485B3 /* hangman7.gif */; settings = {ASSET_TAGS = (); }; };
 		DF9263561BDC5A35004C03F5 /* HangmanPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9263551BDC5A35004C03F5 /* HangmanPhrase.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -26,9 +32,15 @@
 		3A2BBF601BCDDAC200B23285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A2BBF631BCDDAC200B23285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A2BBF651BCDDAC200B23285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A2BBF6C1BCDDDA900B23285 /* HangmanWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanWords.swift; sourceTree = "<group>"; };
 		3A2BBF6E1BCDDEBB00B23285 /* phrases.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = phrases.plist; sourceTree = "<group>"; };
 		3A2BBF721BCDE37800B23285 /* Hangman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hangman.swift; sourceTree = "<group>"; };
+		DF02A1C31BDF2D5000E485B3 /* hangman1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman1.gif; path = Assets.xcassets/hangman1.dataset/hangman1.gif; sourceTree = "<group>"; };
+		DF02A1C61BDF2D7D00E485B3 /* hangman2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman2.gif; path = Assets.xcassets/hangman2.dataset/hangman2.gif; sourceTree = "<group>"; };
+		DF02A1C81BDF2D9700E485B3 /* hangman3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman3.gif; path = Assets.xcassets/hangman3.dataset/hangman3.gif; sourceTree = "<group>"; };
+		DF02A1CA1BDF2DA000E485B3 /* hangman4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman4.gif; path = Assets.xcassets/hangman4.dataset/hangman4.gif; sourceTree = "<group>"; };
+		DF02A1CC1BDF2DA600E485B3 /* hangman5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman5.gif; path = Assets.xcassets/hangman5.dataset/hangman5.gif; sourceTree = "<group>"; };
+		DF02A1CE1BDF2DAE00E485B3 /* hangman6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman6.gif; path = Assets.xcassets/hangman6.dataset/hangman6.gif; sourceTree = "<group>"; };
+		DF02A1D01BDF2DB500E485B3 /* hangman7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hangman7.gif; path = Assets.xcassets/hangman7.dataset/hangman7.gif; sourceTree = "<group>"; };
 		DF9263551BDC5A35004C03F5 /* HangmanPhrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangmanPhrase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +79,7 @@
 				3A2BBF6B1BCDDD7B00B23285 /* Words */,
 				3A2BBF591BCDDAC200B23285 /* AppDelegate.swift */,
 				3A2BBF5D1BCDDAC200B23285 /* Main.storyboard */,
+				DF02A1C51BDF2D6100E485B3 /* Images */,
 				3A2BBF601BCDDAC200B23285 /* Assets.xcassets */,
 				3A2BBF621BCDDAC200B23285 /* LaunchScreen.storyboard */,
 				3A2BBF651BCDDAC200B23285 /* Info.plist */,
@@ -77,7 +90,6 @@
 		3A2BBF6B1BCDDD7B00B23285 /* Words */ = {
 			isa = PBXGroup;
 			children = (
-				3A2BBF6C1BCDDDA900B23285 /* HangmanWords.swift */,
 				3A2BBF6E1BCDDEBB00B23285 /* phrases.plist */,
 			);
 			name = Words;
@@ -98,6 +110,20 @@
 				DF9263551BDC5A35004C03F5 /* HangmanPhrase.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		DF02A1C51BDF2D6100E485B3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DF02A1D01BDF2DB500E485B3 /* hangman7.gif */,
+				DF02A1CE1BDF2DAE00E485B3 /* hangman6.gif */,
+				DF02A1CC1BDF2DA600E485B3 /* hangman5.gif */,
+				DF02A1CA1BDF2DA000E485B3 /* hangman4.gif */,
+				DF02A1C81BDF2D9700E485B3 /* hangman3.gif */,
+				DF02A1C61BDF2D7D00E485B3 /* hangman2.gif */,
+				DF02A1C31BDF2D5000E485B3 /* hangman1.gif */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +184,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2BBF6F1BCDDEBB00B23285 /* phrases.plist in Resources */,
+				DF02A1C91BDF2D9700E485B3 /* hangman3.gif in Resources */,
 				3A2BBF641BCDDAC200B23285 /* LaunchScreen.storyboard in Resources */,
+				DF02A1C71BDF2D7D00E485B3 /* hangman2.gif in Resources */,
+				DF02A1CF1BDF2DAE00E485B3 /* hangman6.gif in Resources */,
 				3A2BBF611BCDDAC200B23285 /* Assets.xcassets in Resources */,
+				DF02A1D11BDF2DB500E485B3 /* hangman7.gif in Resources */,
 				3A2BBF5F1BCDDAC200B23285 /* Main.storyboard in Resources */,
+				DF02A1CB1BDF2DA000E485B3 /* hangman4.gif in Resources */,
+				DF02A1C41BDF2D5000E485B3 /* hangman1.gif in Resources */,
+				DF02A1CD1BDF2DA600E485B3 /* hangman5.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2BBF5C1BCDDAC200B23285 /* HangmanViewController.swift in Sources */,
-				3A2BBF6D1BCDDDA900B23285 /* HangmanWords.swift in Sources */,
 				3A2BBF731BCDE37800B23285 /* Hangman.swift in Sources */,
 				DF9263561BDC5A35004C03F5 /* HangmanPhrase.swift in Sources */,
 				3A2BBF5A1BCDDAC200B23285 /* AppDelegate.swift in Sources */,
